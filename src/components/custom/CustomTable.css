@@ -1,0 +1,58 @@
+/* Tăng kích thước của nút */
+.ant-button {
+  max-width: 90px !important;
+}
+
+/* Định dạng ô tìm kiếm */
+
+.ant-input-affix-wrapper {
+  float: left;
+}
+
+/* Định dạng kích thước biểu tượng trong ant-space */
+.ant-space .anticon {
+  font-size: 18px;
+}
+
+/* Hiệu ứng hover cho biểu tượng trong ant-space */
+.ant-space-item:hover .anticon {
+  color: #ff18be;
+  /* Màu sắc mới khi hover */
+}
+
+/* Hiệu ứng hover cho biểu tượng Delete trong ant-popover */
+.ant-popover-message-title .anticon:hover {
+  color: rgb(0, 255, 17);
+  /* Màu sắc mới khi hover */
+}
+
+/* Hiệu ứng hover cho biểu tượng Save và Close trong ant-space */
+.ant-space-item > span:hover .anticon {
+  color: green;
+  /* Màu sắc mới khi hover */
+}
+
+.ant-table-column-title {
+  width: 130px;
+}
+
+.ant-table-content {
+  background-color: white !important;
+  width: 200px !important;
+}
+
+.ant-pagination {
+  padding: 0 15px;
+}
+
+@media only screen and (max-width: 1135px) {
+  .table-header-responsive {
+    min-width: 1150px !important;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 436px) {
+  .ant-input-affix-wrapper {
+    width: 119px !important;
+  }
+}

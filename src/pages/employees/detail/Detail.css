@@ -1,0 +1,153 @@
+.employee_avt {
+  display: flex;
+  align-items: center;
+}
+
+.employee_name {
+  font-weight: 500;
+  font-size: 23px;
+  margin: 0;
+}
+
+.employee_title {
+  margin-left: 35px;
+}
+
+.employee_position {
+  font-size: 16px;
+  font-weight: 500;
+  color: #167ec5;
+  margin: 0 0 2px;
+}
+
+.avt {
+  width: 100px;
+  border-radius: 50%;
+  height: 100px;
+}
+
+.vertical-line {
+  border-left: 1px solid #b3b2b2af;
+  height: 70px;
+  margin-left: 80px;
+  display: flex;
+  align-self: center;
+}
+
+.employee_label {
+  color: rgb(105, 105, 105);
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.info {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.profile_line {
+  margin: 20px 0;
+  border: none;
+  border-bottom: 1px solid rgb(184, 184, 184);
+}
+
+.horizontal_container {
+  display: flex;
+  align-items: center;
+}
+
+.content1,
+.content2 {
+  flex: 1;
+  min-width: 100%;
+}
+
+.content_1,
+.content_2 {
+  flex: 1;
+}
+
+.content_1 {
+  margin-left: 40px;
+}
+
+.employee_content {
+  display: flex;
+}
+
+.employee_info {
+  margin-left: 15px !important;
+  font-size: 16px;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.active {
+  background-color: green;
+}
+
+.inactive {
+  background-color: red;
+}
+
+.status-show {
+  display: flex;
+  align-items: center;
+}
+
+.status-text {
+  margin: 5px 10px;
+}
+
+.pro_description,
+.pro_title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.pro_description {
+  -webkit-line-clamp: 3;
+}
+
+.pro_title {
+  -webkit-line-clamp: 1;
+}
+
+.pro_date {
+  cursor: default;
+}
+.pro_date:hover {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.pro_eye {
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 16px;
+}
+.pro_eye:hover {
+  color: #4096ff !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .avatar_status {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 1509px) {
+  .card-responsive-role {
+    height: 45px;
+  }
+}

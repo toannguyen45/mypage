@@ -1,0 +1,73 @@
+.section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* Center the container horizontally */
+  min-height: 50vh; /* Full viewport height */
+  padding: 120px 0;
+}
+
+.container {
+  display: flow-root;
+  background: white; /* Pure white background for the form */
+  border: 1px solid #ddd; /* Lighter border for subtlety */
+  border-radius: 12px; /* Slightly larger radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  margin: 0 auto;
+  width: 300px; /* Max width for better control */
+  padding: 20px 30px; /* Increased padding for better spacing */
+}
+
+.footer {
+  margin-top: 24px;
+  text-align: center;
+  width: 100%;
+}
+
+.header {
+  margin-bottom: 40px; /* Increased margin for better spacing */
+  text-align: center; /* Centered header text */
+}
+
+.text {
+  color: #333333; /* Darker color for better readability */
+  font-size: 14px; /* Adjusted font size for better legibility */
+}
+
+.title {
+  color: #333333; /* Uniform text color */
+  font-size: 22px; /* Larger font size for title */
+  margin-bottom: 10px; /* Space between title and text */
+}
+.input_email {
+  /* Khoảng cách từ phía trên */
+  margin-bottom: 0px; /* Khoảng cách từ phía dưới */
+}
+.input_password {
+  /* Khoảng cách từ phía trên */
+  margin-top: 0px; /* Khoảng cách từ phía dưới */
+}
+.language_container {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding: 0;
+}
+.Remember_me {
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 26px; /* Even larger font size for larger screens */
+  }
+
+  .container {
+    padding: 30px 40px; /* Increased padding for larger container */
+  }
+}
+@media screen and (min-width: 360px) {
+  .container {
+    padding: 20px;
+  }
+}

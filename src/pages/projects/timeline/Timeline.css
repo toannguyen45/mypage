@@ -1,0 +1,25 @@
+.timeline-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.timeline-label {
+  font-weight: bold;
+}
+
+.timeline-content {
+  margin-top: 8px;
+}
+
+.tooltip-content {
+  max-width: 300px;
+}
+.timeline-card {
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 17px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+}
