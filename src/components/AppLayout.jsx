@@ -9,7 +9,17 @@ import {
 import { showToast } from '@components/toast/ToastCustom'
 import { logout } from '@redux/Slice/authSlice'
 import { setSelectedKey } from '@redux/Slice/menuSlice'
-import { Button, Layout, Menu, Select, Space, theme } from 'antd'
+import {
+  Avatar,
+  Button,
+  Card,
+  Flex,
+  Layout,
+  Menu,
+  Select,
+  Space,
+  theme,
+} from 'antd'
 import { Suspense, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useDispatch, useSelector } from 'react-redux'
@@ -67,6 +77,7 @@ const AppLayout = ({ children }) => {
   const handleLogout = () => {
     setShowLogoutModal(true)
   }
+
   return (
     <Layout style={{ minHeight: '100vh' }}>
       <Modal
@@ -87,7 +98,12 @@ const AppLayout = ({ children }) => {
       >
         <p>{t('message.logout_Modal_Message')}</p>
       </Modal>
-      <Sider trigger={null} collapsible collapsed={collapsed}>
+      <Sider
+        trigger={null}
+        collapsible
+        collapsed={collapsed}
+        style={{ margin: '5px' }}
+      >
         <Header
           style={{
             display: 'flex',
@@ -107,6 +123,20 @@ const AppLayout = ({ children }) => {
             onClick={handleClick}
           />
         </Header>
+        <Card
+          style={{ margin: '5px', background: '#113c64' }}
+          bodyStyle={{ padding: '7px' }}
+          bordered={false}
+        >
+          <Flex gap="small" align="center">
+            <Avatar
+              icon={<UserOutlined />}
+              src="https://xsgames.co/randomusers/avatar.php?g=pixel&key=1"
+            />
+            <div>TOan</div>
+            <div>2</div>
+          </Flex>
+        </Card>
         <Menu
           theme="dark"
           mode="inline"
